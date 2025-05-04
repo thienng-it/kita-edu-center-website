@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KITA Edu Center</title>
+    <meta name="description" content="Get in touch with KITA Edu Center in HCMC. Find our address, phone number, email, map, and send us a message.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container">
+             <a href="index.html" class="logo">
+                 <img src="https://placehold.co/150x50/0056b3/FFFFFF?text=KITA+Edu" alt="KITA Edu Center Logo" style="height: 40px; width: auto;">
+            </a>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Open Menu" aria-expanded="false">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="fees.html" class="nav-link">Fees</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="staff.html" class="nav-link">Staff</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We're here to help. Reach out via phone, email, or the form below.</p>
+            </div>
+        </section>
+
+        <section class="container content-section animate-on-scroll fade-in">
+            <div class="contact-layout">
+                <div class="contact-info animate-on-scroll fade-in-left">
+                    <h2>Get in Touch</h2>
+                    <p>Visit us, call us, or send an email. We look forward to hearing from you!</p>
+                    <ul>
+                        <li><strong><i class="icon-map-pin"></i> Address:</strong> 123 Example Street, Ward X, District 1, Ho Chi Minh City, Vietnam</li>
+                        <li><strong><i class="icon-phone"></i> Phone:</strong> <a href="tel:+84123456789">+84 123 456 789</a></li>
+                        <li><strong><i class="icon-mail"></i> Email:</strong> <a href="mailto:info@kitaseducenter.example">info@kitaseducenter.example</a></li>
+                        <li><strong><i class="icon-clock"></i> Hours:</strong> Mon - Fri: 9:00 AM - 7:00 PM | Sat: 9:00 AM - 1:00 PM</li>
+                    </ul>
+                     <div class="social-links">
+                         <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                         <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                         <a href="#" aria-label="Youtube"><i class="icon-youtube"></i></a>
+                     </div>
+                </div>
+
+                <div class="contact-form-container animate-on-scroll fade-in-right">
+                    <h2>Send Us a Message</h2>
+                    <form id="contact-form" action="YOUR_FORM_ENDPOINT" method="POST">
+                         <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Your Full Name">
+                        </div>
+                         <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                         <div class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+84 ...">
+                        </div>
+                         <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="e.g., Course Inquiry">
+                        </div>
+                         <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p id="form-status" class="form-status"></p> </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section animate-on-scroll fade-in">
+             <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.447176228334!2d106.70000000000000!3d10.77698800000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3a9d9d17cf%3A0x1f24b3d3e9d17cf!2sHo%20Chi%20Minh%20City%20Hall!5e0!3m2!1sen!2svn!4v1678886400000!5m2!1sen!2svn"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="KITA Edu Center Location">
+            </iframe>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content"> ... </div>
+         <div class="footer-bottom"> ... </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
