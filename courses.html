@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Courses - KITA Edu Center</title>
-    <meta name="description" content="Explore English language and Art Performance courses offered at KITA Edu Center in HCMC, including ABRSM preparation.">
+    <title data-i18n-key="coursesPageTitle">Our Courses - KITA Edu Center</title>
+    <meta name="description" data-i18n-key="coursesMetaDescription" data-i18n-target="content" content="Explore English language and Art Performance courses offered at KITA Edu Center in HCMC, including ABRSM preparation.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,116 +21,156 @@
                 <span class="bar"></span><span class="bar"></span><span class="bar"></span>
             </button>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="courses.html" class="nav-link">Courses</a></li>
-                <li><a href="fees.html" class="nav-link">Fees</a></li>
-                <li><a href="events.html" class="nav-link">Events</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="staff.html" class="nav-link">Staff</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link" data-i18n-key="navHome">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n-key="navAbout">About</a></li>
+                <li><a href="courses.html" class="nav-link" data-i18n-key="navCourses">Courses</a></li>
+                <li><a href="fees.html" class="nav-link" data-i18n-key="navFees">Fees</a></li>
+                <li><a href="events.html" class="nav-link" data-i18n-key="navEvents">Events</a></li>
+                <li><a href="blog.html" class="nav-link" data-i18n-key="navBlog">Blog</a></li>
+                <li><a href="staff.html" class="nav-link" data-i18n-key="navStaff">Staff</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n-key="navContact">Contact</a></li>
             </ul>
+
+            <div class="search-container" id="search-container">
+                <input type="search" id="search-input" class="search-input" data-i18n-key="searchPlaceholder" data-i18n-target="placeholder" placeholder="Search site...">
+                <div id="search-results-dropdown" class="search-results-dropdown" style="display: none;">
+                    </div>
+            </div>
+
+            <button id="theme-toggle-button" class="theme-toggle-button" aria-label="Toggle theme">
+                <span class="theme-icon-sun">☀️</span>
+                <span class="theme-icon-moon" style="display:none;">🌙</span>
+            </button>
+
+            <div class="language-switcher" style="margin-left: 10px;">
+                <button id="lang-en-button" class="lang-button" data-lang="en" title="Switch to English">EN</button>
+                <button id="lang-vi-button" class="lang-button" data-lang="vi" title="Switch to Vietnamese">VN</button>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>Our Courses</h1>
-                <p>Find the perfect program to enhance your skills.</p>
+                <h1 data-i18n-key="coursesHeroTitle">Our Courses</h1>
+                <p data-i18n-key="coursesHeroSubtitle">Find the perfect program to enhance your skills.</p>
             </div>
         </section>
 
         <section id="english" class="container content-section animate-on-scroll fade-in">
             <div class="section-header">
-                <h2>English Language Programs</h2>
-                <p class="subtitle">From foundational skills to advanced fluency.</p>
+                <h2 data-i18n-key="englishProgramsTitle">English Language Programs</h2>
+                <p class="subtitle" data-i18n-key="englishProgramsSubtitle">From foundational skills to advanced fluency.</p>
             </div>
             <div class="course-list">
                 <div class="course-item animate-on-scroll fade-in-up">
                     <img src="https://placehold.co/450x300/0056b3/ffffff?text=General+English" alt="General English Class" class="course-image">
                     <div class="course-details">
-                        <h3>General English (All Levels)</h3>
-                        <p>Develop comprehensive skills in reading, writing, listening, and speaking for everyday use.</p>
+                        <h3 data-i18n-key="genEngCourseTitle">General English (All Levels)</h3>
+                        <p data-i18n-key="genEngCourseDesc">Develop comprehensive skills in reading, writing, listening, and speaking for everyday use.</p>
                         <ul>
-                            <li>Levels: Beginner to Advanced</li>
-                            <li>Focus: Grammar, Vocabulary, Communication</li>
-                            <li>Ideal for: Overall language improvement</li>
+                            <li data-i18n-key="genEngLevel">Levels: Beginner to Advanced</li>
+                            <li data-i18n-key="genEngFocus">Focus: Grammar, Vocabulary, Communication</li>
+                            <li data-i18n-key="genEngIdeal">Ideal for: Overall language improvement</li>
                         </ul>
-                        <a href="contact.html?course=General+English" class="btn btn-secondary">Inquire Now</a>
+                        <a href="contact.html?course=General+English" class="btn btn-secondary" data-i18n-key="inquireNowButton">Inquire Now</a>
                     </div>
                 </div>
                  <div class="course-item animate-on-scroll fade-in-up">
                     <img src="https://placehold.co/450x300/5bc0de/ffffff?text=IELTS+Prep" alt="IELTS Preparation Course" class="course-image">
                     <div class="course-details">
-                        <h3>IELTS Preparation</h3>
-                        <p>Targeted training and strategies to help you achieve your desired score in the IELTS exam.</p>
+                        <h3 data-i18n-key="ieltsPrepCourseTitle">IELTS Preparation</h3>
+                        <p data-i18n-key="ieltsPrepCourseDesc">Targeted training and strategies to help you achieve your desired score in the IELTS exam.</p>
                          <ul>
-                            <li>Focus: Academic Reading/Writing, Listening/Speaking strategies</li>
-                            <li>Features: Mock tests, expert feedback</li>
-                            <li>Ideal for: University admission, immigration</li>
+                            <li data-i18n-key="ieltsFocus">Focus: Academic Reading/Writing, Listening/Speaking strategies</li>
+                            <li data-i18n-key="ieltsFeatures">Features: Mock tests, expert feedback</li>
+                            <li data-i18n-key="ieltsIdeal">Ideal for: University admission, immigration</li>
                         </ul>
-                        <a href="contact.html?course=IELTS+Prep" class="btn btn-secondary">Inquire Now</a>
+                        <a href="contact.html?course=IELTS+Prep" class="btn btn-secondary" data-i18n-key="inquireNowButton">Inquire Now</a>
                     </div>
                 </div>
                  <div class="course-item animate-on-scroll fade-in-up">
                     <img src="https://placehold.co/450x300/f0ad4e/ffffff?text=Business+English" alt="Business English Course" class="course-image">
                     <div class="course-details">
-                        <h3>Business English</h3>
-                        <p>Master the language needed for professional environments, including presentations, negotiations, and emails.</p>
+                        <h3 data-i18n-key="bizEngCourseTitle">Business English</h3>
+                        <p data-i18n-key="bizEngCourseDesc">Master the language needed for professional environments, including presentations, negotiations, and emails.</p>
                          <ul>
-                            <li>Focus: Professional communication, industry vocabulary</li>
-                            <li>Activities: Role-playing, case studies</li>
-                            <li>Ideal for: Working professionals, career advancement</li>
+                            <li data-i18n-key="bizEngFocus">Focus: Professional communication, industry vocabulary</li>
+                            <li data-i18n-key="bizEngActivities">Activities: Role-playing, case studies</li>
+                            <li data-i18n-key="bizEngIdeal">Ideal for: Working professionals, career advancement</li>
                         </ul>
-                         <a href="contact.html?course=Business+English" class="btn btn-secondary">Inquire Now</a>
+                         <a href="contact.html?course=Business+English" class="btn btn-secondary" data-i18n-key="inquireNowButton">Inquire Now</a>
                     </div>
                 </div>
-                 </div>
+             </div>
         </section>
 
         <section id="arts" class="content-section bg-light animate-on-scroll fade-in">
             <div class="container">
                 <div class="section-header">
-                    <h2>Art Performance Programs</h2>
-                    <p class="subtitle">Express yourself through music and drama.</p>
+                    <h2 data-i18n-key="artProgramsTitle">Art Performance Programs</h2>
+                    <p class="subtitle" data-i18n-key="artProgramsSubtitle">Express yourself through music and drama.</p>
                 </div>
                  <div class="course-list">
                     <div class="course-item animate-on-scroll fade-in-up">
                          <img src="https://placehold.co/450x300/d9534f/ffffff?text=ABRSM+Music" alt="ABRSM Music Class" class="course-image">
                         <div class="course-details">
-                            <h3>ABRSM Music (Practical & Theory)</h3>
-                            <p>Structured lessons following the ABRSM syllabus for various instruments (Piano, Violin, etc.) and music theory.</p>
+                            <h3 data-i18n-key="abrsmCourseTitle">ABRSM Music (Practical & Theory)</h3>
+                            <p data-i18n-key="abrsmCourseDesc">Structured lessons following the ABRSM syllabus for various instruments (Piano, Violin, etc.) and music theory.</p>
                             <ul>
-                                <li>Instruments: Piano, Violin, Guitar (Specify available)</li>
-                                <li>Focus: Technique, repertoire, musicality, theory</li>
-                                <li>Ideal for: Graded music exams, skill development</li>
+                                <li data-i18n-key="abrsmInstruments">Instruments: Piano, Violin, Guitar (Specify available)</li>
+                                <li data-i18n-key="abrsmFocus">Focus: Technique, repertoire, musicality, theory</li>
+                                <li data-i18n-key="abrsmIdeal">Ideal for: Graded music exams, skill development</li>
                             </ul>
-                            <a href="contact.html?course=ABRSM+Music" class="btn btn-secondary">Inquire Now</a>
+                            <a href="contact.html?course=ABRSM+Music" class="btn btn-secondary" data-i18n-key="inquireNowButton">Inquire Now</a>
                         </div>
                     </div>
                      <div class="course-item animate-on-scroll fade-in-up">
                          <img src="https://placehold.co/450x300/5cb85c/ffffff?text=Drama+Class" alt="Drama Class" class="course-image">
                         <div class="course-details">
-                            <h3>Drama & Public Speaking</h3>
-                            <p>Develop acting skills, stage presence, and confident communication through interactive drama exercises.</p>
+                            <h3 data-i18n-key="dramaCourseTitle">Drama & Public Speaking</h3>
+                            <p data-i18n-key="dramaCourseDesc">Develop acting skills, stage presence, and confident communication through interactive drama exercises.</p>
                              <ul>
-                                <li>Focus: Improvisation, voice projection, character work</li>
-                                <li>Benefits: Confidence building, creativity</li>
-                                <li>Ideal for: All ages interested in performance</li>
+                                <li data-i18n-key="dramaFocus">Focus: Improvisation, voice projection, character work</li>
+                                <li data-i18n-key="dramaBenefits">Benefits: Confidence building, creativity</li>
+                                <li data-i18n-key="dramaIdeal">Ideal for: All ages interested in performance</li>
                             </ul>
-                             <a href="contact.html?course=Drama" class="btn btn-secondary">Inquire Now</a>
+                             <a href="contact.html?course=Drama" class="btn btn-secondary" data-i18n-key="inquireNowButton">Inquire Now</a>
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
         </section>
 
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-content"> ... </div>
-         <div class="footer-bottom"> ... </div>
+        <div class="container footer-content">
+             <div class="footer-about">
+                <h4 data-i18n-key="footerKitaEdu">KITA Edu Center</h4>
+                <p data-i18n-key="footerAboutText">Nurturing potential in English and Arts in Ho Chi Minh City since [Year Founded].</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n-key="footerQuickLinks">Quick Links</h4>
+                <ul>
+                    <li><a href="about.html" data-i18n-key="navAbout">About Us</a></li>
+                    <li><a href="courses.html" data-i18n-key="navCourses">Courses</a></li>
+                    <li><a href="events.html" data-i18n-key="navEvents">Events</a></li>
+                    <li><a href="blog.html" data-i18n-key="navBlog">Blog</a></li>
+                    <li><a href="contact.html" data-i18n-key="navContact">Contact</a></li>
+                    <li><a href="#" data-i18n-key="navPrivacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4 data-i18n-key="footerContactInfo">Contact Info</h4>
+                <p data-i18n-key="footerAddress">123 Example Street, District 1<br>Ho Chi Minh City, Vietnam</p>
+                <p><span data-i18n-key="footerPhoneLabel">Phone:</span> <a href="tel:+84123456789">+84 123 456 789</a></p>
+                <p><span data-i18n-key="footerEmailLabel">Email:</span> <a href="mailto:info@kitaseducenter.example">info@kitaseducenter.example</a></p>
+            </div>
+        </div>
+         <div class="footer-bottom">
+            <p data-i18n-key="footerCopyright">&copy; <span id="current-year"></span> KITA Edu Center. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>

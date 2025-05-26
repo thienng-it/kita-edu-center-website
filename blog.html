@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog & News - KITA Edu Center</title>
-    <meta name="description" content="Read articles, tips, and news about English learning, art performance, ABRSM exams, and life at KITA Edu Center.">
+    <title data-i18n-key="blogListPageTitle">Blog & News - KITA Edu Center</title>
+    <meta name="description" data-i18n-key="blogListPageMetaDescription" data-i18n-target="content" content="Read articles, tips, and news about English learning, art performance, ABRSM exams, and life at KITA Edu Center.">
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,23 +21,40 @@
                 <span class="bar"></span><span class="bar"></span><span class="bar"></span>
             </button>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="courses.html" class="nav-link">Courses</a></li>
-                <li><a href="fees.html" class="nav-link">Fees</a></li>
-                <li><a href="events.html" class="nav-link">Events</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="staff.html" class="nav-link">Staff</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link" data-i18n-key="navHome">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n-key="navAbout">About</a></li>
+                <li><a href="courses.html" class="nav-link" data-i18n-key="navCourses">Courses</a></li>
+                <li><a href="fees.html" class="nav-link" data-i18n-key="navFees">Fees</a></li>
+                <li><a href="events.html" class="nav-link" data-i18n-key="navEvents">Events</a></li>
+                <li><a href="blog.html" class="nav-link" data-i18n-key="navBlog">Blog</a></li>
+                <li><a href="staff.html" class="nav-link" data-i18n-key="navStaff">Staff</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n-key="navContact">Contact</a></li>
+                <li><a href="feedback.html" class="nav-link" data-i18n-key="navFeedback">Feedback</a></li>
             </ul>
+
+            <div class="search-container" id="search-container">
+                <input type="search" id="search-input" class="search-input" data-i18n-key="searchPlaceholder" data-i18n-target="placeholder" placeholder="Search site...">
+                <div id="search-results-dropdown" class="search-results-dropdown" style="display: none;">
+                    </div>
+            </div>
+
+            <button id="theme-toggle-button" class="theme-toggle-button" aria-label="Toggle theme">
+                <span class="theme-icon-sun">☀️</span>
+                <span class="theme-icon-moon" style="display:none;">🌙</span>
+            </button>
+
+            <div class="language-switcher" style="margin-left: 10px;">
+                <button id="lang-en-button" class="lang-button" data-lang="en" title="Switch to English">EN</button>
+                <button id="lang-vi-button" class="lang-button" data-lang="vi" title="Switch to Vietnamese">VN</button>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>KITA Edu Blog</h1>
-                <p>Insights, Tips, and News from Our Center.</p>
+                <h1 data-i18n-key="blogListHeroTitle">KITA Edu Blog</h1>
+                <p data-i18n-key="blogListHeroSubtitle">Insights, Tips, and News from Our Center.</p>
             </div>
         </section>
 
@@ -46,67 +62,67 @@
             <div class="blog-layout">
                 <div class="blog-feed">
                     <article class="blog-post-summary animate-on-scroll fade-in-up">
-                        <img src="https://placehold.co/800x400/d9534f/ffffff?text=ABRSM+Tips" alt="ABRSM Exam Preparation" class="blog-summary-image">
+                        <img src="https://placehold.co/800x400/d9534f/ffffff?text=ABRSM+Tips" class="blog-summary-image" data-i18n-key="blogPost1ImageAlt" data-i18n-target="alt" alt="ABRSM Exam Preparation">
                         <div class="blog-summary-content">
                             <p class="post-meta">
-                                <span class="category">ABRSM Exams</span> | <time datetime="2025-05-01">May 1, 2025</time>
+                                <span class="category" data-i18n-key="blogPost1Category">ABRSM Exams</span> | <time datetime="2025-05-01" data-i18n-key="blogPost1Date">May 1, 2025</time>
                             </p>
-                            <h2><a href="blog_posts/sample-post.html">Top 5 Tips for Acing Your ABRSM Practical Exam</a></h2>
-                            <p>Preparing for an ABRSM practical exam can be demanding. Here are five key strategies our experienced music teachers recommend to help you perform your best on the big day...</p>
-                            <a href="blog_posts/sample-post.html" class="read-more">Read More &rarr;</a>
+                            <h2><a href="blog_posts/sample-post.html" data-i18n-key="blogPost1Title">Top 5 Tips for Acing Your ABRSM Practical Exam</a></h2>
+                            <p data-i18n-key="blogPost1Excerpt">Preparing for an ABRSM practical exam can be demanding. Here are five key strategies our experienced music teachers recommend to help you perform your best on the big day...</p>
+                            <a href="blog_posts/sample-post.html" class="read-more" data-i18n-key="readMoreLink">Read More &rarr;</a>
                         </div>
                     </article>
 
                      <article class="blog-post-summary animate-on-scroll fade-in-up">
-                        <img src="https://placehold.co/800x400/5bc0de/ffffff?text=English+Fluency" alt="People talking" class="blog-summary-image">
+                        <img src="https://placehold.co/800x400/5bc0de/ffffff?text=English+Fluency" class="blog-summary-image" data-i18n-key="blogPost2ImageAlt" data-i18n-target="alt" alt="People talking">
                         <div class="blog-summary-content">
                              <p class="post-meta">
-                                <span class="category">English Learning</span> | <time datetime="2025-04-15">April 15, 2025</time>
+                                <span class="category" data-i18n-key="blogPost2Category">English Learning</span> | <time datetime="2025-04-15" data-i18n-key="blogPost2Date">April 15, 2025</time>
                             </p>
-                            <h2><a href="blog_posts/sample-post.html">Beyond the Classroom: Fun Ways to Improve English Fluency</a></h2>
-                            <p>Learning English doesn't stop when class ends! Discover practical and enjoyable activities you can do in Ho Chi Minh City and online to boost your speaking confidence...</p>
-                            <a href="blog_posts/sample-post.html" class="read-more">Read More &rarr;</a>
+                            <h2><a href="blog_posts/sample-post.html" data-i18n-key="blogPost2Title">Beyond the Classroom: Fun Ways to Improve English Fluency</a></h2>
+                            <p data-i18n-key="blogPost2Excerpt">Learning English doesn't stop when class ends! Discover practical and enjoyable activities you can do in Ho Chi Minh City and online to boost your speaking confidence...</p>
+                            <a href="blog_posts/sample-post.html" class="read-more" data-i18n-key="readMoreLink">Read More &rarr;</a>
                         </div>
                     </article>
 
                      <article class="blog-post-summary animate-on-scroll fade-in-up">
-                        <img src="https://placehold.co/800x400/5cb85c/ffffff?text=Drama+Benefits" alt="Children acting on stage" class="blog-summary-image">
+                        <img src="https://placehold.co/800x400/5cb85c/ffffff?text=Drama+Benefits" class="blog-summary-image" data-i18n-key="blogPost3ImageAlt" data-i18n-target="alt" alt="Children acting on stage">
                         <div class="blog-summary-content">
                              <p class="post-meta">
-                                <span class="category">Performing Arts</span> | <time datetime="2025-03-28">March 28, 2025</time>
+                                <span class="category" data-i18n-key="blogPost3Category">Performing Arts</span> | <time datetime="2025-03-28" data-i18n-key="blogPost3Date">March 28, 2025</time>
                             </p>
-                            <h2><a href="blog_posts/sample-post.html">The Unexpected Benefits of Drama Classes for Children</a></h2>
-                            <p>Drama isn't just about acting; it's a powerful tool for developing essential life skills. Learn how our drama programs help children build confidence, creativity, and communication abilities...</p>
-                            <a href="blog_posts/sample-post.html" class="read-more">Read More &rarr;</a>
+                            <h2><a href="blog_posts/sample-post.html" data-i18n-key="blogPost3Title">The Unexpected Benefits of Drama Classes for Children</a></h2>
+                            <p data-i18n-key="blogPost3Excerpt">Drama isn't just about acting; it's a powerful tool for developing essential life skills. Learn how our drama programs help children build confidence, creativity, and communication abilities...</p>
+                            <a href="blog_posts/sample-post.html" class="read-more" data-i18n-key="readMoreLink">Read More &rarr;</a>
                         </div>
                     </article>
 
-                    </div>
+                </div>
 
                 <aside class="blog-sidebar">
                     <div class="sidebar-widget animate-on-scroll fade-in">
-                        <h4>Categories</h4>
+                        <h4 data-i18n-key="blogSidebarCategoriesTitle">Categories</h4>
                         <ul class="category-list">
-                            <li><a href="#">English Learning</a> (15)</li>
-                            <li><a href="#">ABRSM Exams</a> (8)</li>
-                            <li><a href="#">Performing Arts</a> (12)</li>
-                            <li><a href="#">Student Life</a> (5)</li>
-                            <li><a href="#">Center News</a> (10)</li>
+                            <li><a href="#" data-i18n-key="blogCategoryEnglish">English Learning</a> (<span data-i18n-key="blogCategoryEnglishCount">15</span>)</li>
+                            <li><a href="#" data-i18n-key="blogCategoryABRSM">ABRSM Exams</a> (<span data-i18n-key="blogCategoryABRSMCount">8</span>)</li>
+                            <li><a href="#" data-i18n-key="blogCategoryPerformingArts">Performing Arts</a> (<span data-i18n-key="blogCategoryPerformingArtsCount">12</span>)</li>
+                            <li><a href="#" data-i18n-key="blogCategoryStudentLife">Student Life</a> (<span data-i18n-key="blogCategoryStudentLifeCount">5</span>)</li>
+                            <li><a href="#" data-i18n-key="blogCategoryCenterNews">Center News</a> (<span data-i18n-key="blogCategoryCenterNewsCount">10</span>)</li>
                         </ul>
                     </div>
                      <div class="sidebar-widget animate-on-scroll fade-in">
-                        <h4>Recent Posts</h4>
+                        <h4 data-i18n-key="blogSidebarRecentPostsTitle">Recent Posts</h4>
                         <ul class="recent-posts-list">
-                            <li><a href="blog_posts/sample-post.html">Top 5 Tips for Acing Your ABRSM Practical Exam</a></li>
-                            <li><a href="blog_posts/sample-post.html">Beyond the Classroom: Fun Ways to Improve English Fluency</a></li>
-                            <li><a href="blog_posts/sample-post.html">The Unexpected Benefits of Drama Classes for Children</a></li>
+                            <li><a href="blog_posts/sample-post.html" data-i18n-key="blogPost1Title">Top 5 Tips for Acing Your ABRSM Practical Exam</a></li>
+                            <li><a href="blog_posts/sample-post.html" data-i18n-key="blogPost2Title">Beyond the Classroom: Fun Ways to Improve English Fluency</a></li>
+                            <li><a href="blog_posts/sample-post.html" data-i18n-key="blogPost3Title">The Unexpected Benefits of Drama Classes for Children</a></li>
                         </ul>
                     </div>
                      <div class="sidebar-widget animate-on-scroll fade-in">
-                        <h4>Search Blog</h4>
+                        <h4 data-i18n-key="blogSidebarSearchTitle">Search Blog</h4>
                         <form action="#" method="get" class="search-form">
-                            <input type="search" placeholder="Search..." name="s">
-                            <button type="submit">Go</button>
+                            <input type="search" name="s" data-i18n-key="blogSidebarSearchPlaceholder" data-i18n-target="placeholder" placeholder="Search...">
+                            <button type="submit" data-i18n-key="blogSidebarSearchButton">Go</button>
                         </form>
                     </div>
                 </aside>
@@ -116,8 +132,33 @@
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-content"> ... </div>
-         <div class="footer-bottom"> ... </div>
+        <div class="container footer-content">
+             <div class="footer-about">
+                <h4 data-i18n-key="footerKitaEdu">KITA Edu Center</h4>
+                <p data-i18n-key="footerAboutText">Nurturing potential in English and Arts in Ho Chi Minh City since [Year Founded].</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n-key="footerQuickLinks">Quick Links</h4>
+                <ul>
+                    <li><a href="about.html" data-i18n-key="navAbout">About Us</a></li>
+                    <li><a href="courses.html" data-i18n-key="navCourses">Courses</a></li>
+                    <li><a href="events.html" data-i18n-key="navEvents">Events</a></li>
+                    <li><a href="blog.html" data-i18n-key="navBlog">Blog</a></li>
+                    <li><a href="contact.html" data-i18n-key="navContact">Contact</a></li>
+                    <li><a href="feedback.html" data-i18n-key="navFeedback">Feedback</a></li>
+                    <li><a href="#" data-i18n-key="navPrivacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4 data-i18n-key="footerContactInfo">Contact Info</h4>
+                <p data-i18n-key="footerAddress">123 Example Street, District 1<br>Ho Chi Minh City, Vietnam</p>
+                <p><span data-i18n-key="footerPhoneLabel">Phone:</span> <a href="tel:+84123456789">+84 123 456 789</a></p>
+                <p><span data-i18n-key="footerEmailLabel">Email:</span> <a href="mailto:info@kitaseducenter.example">info@kitaseducenter.example</a></p>
+            </div>
+        </div>
+         <div class="footer-bottom">
+            <p data-i18n-key="footerCopyright">&copy; <span id="current-year"></span> KITA Edu Center. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>

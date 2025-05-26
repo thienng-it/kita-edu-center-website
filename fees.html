@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fees & Tuition - KITA Edu Center</title>
-    <meta name="description" content="View the course fees, tuition schedules, and payment information for KITA Edu Center in HCMC.">
+    <title data-i18n-key="feesPageTitle">Fees & Tuition - KITA Edu Center</title>
+    <meta name="description" data-i18n-key="feesMetaDescription" data-i18n-target="content" content="View the course fees, tuition schedules, and payment information for KITA Edu Center in HCMC.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,107 +21,149 @@
                 <span class="bar"></span><span class="bar"></span><span class="bar"></span>
             </button>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="courses.html" class="nav-link">Courses</a></li>
-                <li><a href="fees.html" class="nav-link">Fees</a></li>
-                <li><a href="events.html" class="nav-link">Events</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="staff.html" class="nav-link">Staff</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link" data-i18n-key="navHome">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n-key="navAbout">About</a></li>
+                <li><a href="courses.html" class="nav-link" data-i18n-key="navCourses">Courses</a></li>
+                <li><a href="fees.html" class="nav-link" data-i18n-key="navFees">Fees</a></li>
+                <li><a href="events.html" class="nav-link" data-i18n-key="navEvents">Events</a></li>
+                <li><a href="blog.html" class="nav-link" data-i18n-key="navBlog">Blog</a></li>
+                <li><a href="staff.html" class="nav-link" data-i18n-key="navStaff">Staff</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n-key="navContact">Contact</a></li>
+                <li><a href="feedback.html" class="nav-link" data-i18n-key="navFeedback">Feedback</a></li>
             </ul>
+
+            <div class="search-container" id="search-container">
+                <input type="search" id="search-input" class="search-input" data-i18n-key="searchPlaceholder" data-i18n-target="placeholder" placeholder="Search site...">
+                <div id="search-results-dropdown" class="search-results-dropdown" style="display: none;">
+                    </div>
+            </div>
+
+            <button id="theme-toggle-button" class="theme-toggle-button" aria-label="Toggle theme">
+                <span class="theme-icon-sun">☀️</span>
+                <span class="theme-icon-moon" style="display:none;">🌙</span>
+            </button>
+
+            <div class="language-switcher" style="margin-left: 10px;">
+                <button id="lang-en-button" class="lang-button" data-lang="en" title="Switch to English">EN</button>
+                <button id="lang-vi-button" class="lang-button" data-lang="vi" title="Switch to Vietnamese">VN</button>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>Fees & Tuition</h1>
-                <p>Transparent pricing for our quality programs.</p>
+                <h1 data-i18n-key="feesHeroTitle">Fees & Tuition</h1>
+                <p data-i18n-key="feesHeroSubtitle">Transparent pricing for our quality programs.</p>
             </div>
         </section>
 
         <section class="container content-section animate-on-scroll fade-in">
             <div class="section-header">
-                <h2>Course Fees Schedule</h2>
-                <p class="subtitle">Find detailed information below. All fees are in VND.</p>
+                <h2 data-i18n-key="feesScheduleTitle">Course Fees Schedule</h2>
+                <p class="subtitle" data-i18n-key="feesScheduleSubtitle">Find detailed information below. All fees are in VND.</p>
             </div>
 
             <div class="fees-table-wrapper">
                 <table class="fees-table">
                     <thead>
                         <tr>
-                            <th>Course / Program</th>
-                            <th>Duration / Frequency</th>
-                            <th>Tuition Fee (per term/course)</th>
-                            <th>Notes</th>
+                            <th data-i18n-key="feesTableHeaderCourse">Course / Program</th>
+                            <th data-i18n-key="feesTableHeaderDuration">Duration / Frequency</th>
+                            <th data-i18n-key="feesTableHeaderTuition">Tuition Fee (per term/course)</th>
+                            <th data-i18n-key="feesTableHeaderNotes">Notes</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-label="Course">General English - Level 1</td>
-                            <td data-label="Duration">12 Weeks (2 sessions/week)</td>
+                            <td data-label="Course" data-i18n-key="feesGenEngL1">General English - Level 1</td>
+                            <td data-label="Duration" data-i18n-key="feesGenEngL1Duration">12 Weeks (2 sessions/week)</td>
                             <td data-label="Fee">X,XXX,XXX VND</td>
-                            <td data-label="Notes">Includes materials</td>
+                            <td data-label="Notes" data-i18n-key="feesGenEngL1Notes">Includes materials</td>
                         </tr>
                         <tr>
-                            <td data-label="Course">General English - Level 2</td>
-                            <td data-label="Duration">12 Weeks (2 sessions/week)</td>
+                            <td data-label="Course" data-i18n-key="feesGenEngL2">General English - Level 2</td>
+                            <td data-label="Duration" data-i18n-key="feesGenEngL2Duration">12 Weeks (2 sessions/week)</td>
                             <td data-label="Fee">Y,YYY,YYY VND</td>
-                            <td data-label="Notes">Includes materials</td>
+                            <td data-label="Notes" data-i18n-key="feesGenEngL2Notes">Includes materials</td>
                         </tr>
                          <tr>
-                            <td data-label="Course">IELTS Preparation</td>
-                            <td data-label="Duration">10 Weeks (3 sessions/week)</td>
+                            <td data-label="Course" data-i18n-key="feesIELTSPrep">IELTS Preparation</td>
+                            <td data-label="Duration" data-i18n-key="feesIELTSPrepDuration">10 Weeks (3 sessions/week)</td>
                             <td data-label="Fee">Z,ZZZ,ZZZ VND</td>
-                            <td data-label="Notes">Mock tests included</td>
+                            <td data-label="Notes" data-i18n-key="feesIELTSPrepNotes">Mock tests included</td>
                         </tr>
                          <tr>
-                            <td data-label="Course">Business English</td>
-                            <td data-label="Duration">8 Weeks (2 sessions/week)</td>
+                            <td data-label="Course" data-i18n-key="feesBizEng">Business English</td>
+                            <td data-label="Duration" data-i18n-key="feesBizEngDuration">8 Weeks (2 sessions/week)</td>
                             <td data-label="Fee">B,BBB,BBB VND</td>
-                            <td data-label="Notes">Focus on professional skills</td>
+                            <td data-label="Notes" data-i18n-key="feesBizEngNotes">Focus on professional skills</td>
                         </tr>
                         <tr>
-                            <td data-label="Course">ABRSM Music - Grade 1-3 (Piano)</td>
-                            <td data-label="Duration">Per Term (1 session/week)</td>
+                            <td data-label="Course" data-i18n-key="feesABRSM13Piano">ABRSM Music - Grade 1-3 (Piano)</td>
+                            <td data-label="Duration" data-i18n-key="feesABRSM13Duration">Per Term (1 session/week)</td>
                             <td data-label="Fee">M,MMM,MMM VND</td>
-                            <td data-label="Notes">Exam fees separate</td>
+                            <td data-label="Notes" data-i18n-key="feesABRSM13Notes">Exam fees separate</td>
                         </tr>
                          <tr>
-                            <td data-label="Course">ABRSM Music - Grade 4-6 (Violin)</td>
-                            <td data-label="Duration">Per Term (1 session/week)</td>
+                            <td data-label="Course" data-i18n-key="feesABRSM46Violin">ABRSM Music - Grade 4-6 (Violin)</td>
+                            <td data-label="Duration" data-i18n-key="feesABRSM46Duration">Per Term (1 session/week)</td>
                             <td data-label="Fee">N,NNN,NNN VND</td>
-                            <td data-label="Notes">Exam fees separate</td>
+                            <td data-label="Notes" data-i18n-key="feesABRSM46Notes">Exam fees separate</td>
                         </tr>
                          <tr>
-                            <td data-label="Course">Drama & Public Speaking (Kids)</td>
-                            <td data-label="Duration">Per Term (1 session/week)</td>
+                            <td data-label="Course" data-i18n-key="feesDramaKids">Drama & Public Speaking (Kids)</td>
+                            <td data-label="Duration" data-i18n-key="feesDramaKidsDuration">Per Term (1 session/week)</td>
                             <td data-label="Fee">D,DDD,DDD VND</td>
-                            <td data-label="Notes">Performance opportunities</td>
+                            <td data-label="Notes" data-i18n-key="feesDramaKidsNotes">Performance opportunities</td>
                         </tr>
-                        </tbody>
+                    </tbody>
                 </table>
             </div>
 
             <div class="fees-notes animate-on-scroll fade-in-up" style="margin-top: 30px;">
-                <h3>Important Information</h3>
+                <h3 data-i18n-key="feesImportantInfoTitle">Important Information</h3>
                 <ul>
-                    <li>A one-time registration fee of [Amount] VND applies to new students.</li>
-                    <li>Sibling discounts may be available. Please inquire.</li>
-                    <li>Fees are subject to change. Please confirm upon registration.</li>
-                    <li>Payment can be made via bank transfer or cash at the center.</li>
-                    <li>Term dates align with [Specify schedule, e.g., school terms].</li>
+                    <li data-i18n-key="feesInfoRegFee">A one-time registration fee of [Amount] VND applies to new students.</li>
+                    <li data-i18n-key="feesInfoSiblingDiscount">Sibling discounts may be available. Please inquire.</li>
+                    <li data-i18n-key="feesInfoSubjectToChange">Fees are subject to change. Please confirm upon registration.</li>
+                    <li data-i18n-key="feesInfoPaymentMethods">Payment can be made via bank transfer or cash at the center.</li>
+                    <li data-i18n-key="feesInfoTermDates">Term dates align with [Specify schedule, e.g., school terms].</li>
                 </ul>
-                <a href="contact.html" class="btn btn-primary">Contact Us for Details</a>
+                <a href="contact.html" class="btn btn-primary" data-i18n-key="feesContactButton">Contact Us for Details</a>
             </div>
         </section>
 
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-content"> ... </div>
-         <div class="footer-bottom"> ... </div>
+        <div class="container footer-content">
+             <div class="footer-about">
+                <h4 data-i18n-key="footerKitaEdu">KITA Edu Center</h4>
+                <p data-i18n-key="footerAboutText">Nurturing potential in English and Arts in Ho Chi Minh City since [Year Founded].</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n-key="footerQuickLinks">Quick Links</h4>
+                <ul>
+                    <li><a href="about.html" data-i18n-key="navAbout">About Us</a></li>
+                    <li><a href="courses.html" data-i18n-key="navCourses">Courses</a></li>
+                    <li><a href="events.html" data-i18n-key="navEvents">Events</a></li>
+                    <li><a href="blog.html" data-i18n-key="navBlog">Blog</a></li>
+                    <li><a href="contact.html" data-i18n-key="navContact">Contact</a></li>
+                    <li><a href="feedback.html" data-i18n-key="navFeedback">Feedback</a></li>
+                    <li><a href="#" data-i18n-key="navPrivacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4 data-i18n-key="footerContactInfo">Contact Info</h4>
+                <p data-i18n-key="footerAddress">123 Example Street, District 1<br>Ho Chi Minh City, Vietnam</p>
+                <p><span data-i18n-key="footerPhoneLabel">Phone:</span> <a href="tel:+84123456789">+84 123 456 789</a></p>
+                <p><span data-i18n-key="footerEmailLabel">Email:</span> <a href="mailto:info@kitaseducenter.example">info@kitaseducenter.example</a></p>
+            </div>
+        </div>
+         <div class="footer-bottom">
+            <p data-i18n-key="footerCopyright">&copy; <span id="current-year"></span> KITA Edu Center. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>

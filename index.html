@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KITA Edu Center - English & Art Performance | HCMC</title>
-    <meta name="description" content="KITA Edu Center offers premier English language and Art Performance courses in Ho Chi Minh City. Join us to unlock your potential.">
+    <title data-i18n-key="pageTitle">KITA Edu Center - English & Art Performance | HCMC</title>
+    <meta name="description" data-i18n-key="metaDescription" content="KITA Edu Center offers premier English language and Art Performance courses in Ho Chi Minh City. Join us to unlock your potential.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,45 +17,61 @@
         <nav class="navbar container">
             <a href="index.html" class="logo">
                 <img src="https://placehold.co/150x50/0056b3/FFFFFF?text=KITA+Edu" alt="KITA Edu Center Logo" style="height: 40px; width: auto;">
-                </a>
+            </a>
             <button class="menu-toggle" id="mobile-menu" aria-label="Open Menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="courses.html" class="nav-link">Courses</a></li>
-                <li><a href="fees.html" class="nav-link">Fees</a></li>
-                <li><a href="events.html" class="nav-link">Events</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="staff.html" class="nav-link">Staff</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link" data-i18n-key="navHome">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n-key="navAbout">About</a></li>
+                <li><a href="courses.html" class="nav-link" data-i18n-key="navCourses">Courses</a></li>
+                <li><a href="fees.html" class="nav-link" data-i18n-key="navFees">Fees</a></li>
+                <li><a href="events.html" class="nav-link" data-i18n-key="navEvents">Events</a></li>
+                <li><a href="blog.html" class="nav-link" data-i18n-key="navBlog">Blog</a></li>
+                <li><a href="staff.html" class="nav-link" data-i18n-key="navStaff">Staff</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n-key="navContact">Contact</a></li>
             </ul>
-        </nav>
+
+            <div class="search-container" id="search-container">
+                <input type="search" id="search-input" class="search-input" placeholder="Search site..." data-i18n-key="searchPlaceholder" data-i18n-target="placeholder">
+                <div id="search-results-dropdown" class="search-results-dropdown" style="display: none;">
+                </div>
+            </div>
+
+            <button id="theme-toggle-button" class="theme-toggle-button" aria-label="Toggle theme">
+                <span class="theme-icon-sun">☀️</span>
+                <span class="theme-icon-moon" style="display:none;">🌙</span>
+            </button>
+
+            <div class="language-switcher" style="margin-left: 10px;">
+                <button id="lang-en-button" class="lang-button" data-lang="en" title="Switch to English">EN</button>
+                <button id="lang-vi-button" class="lang-button" data-lang="vi" title="Switch to Vietnamese">VN</button>
+            </div>
+            </nav>
     </header>
 
     <main>
         <section class="hero">
             <div class="container hero-content">
-                <h1 class="animate-on-scroll fade-in-up">Unlock Your Potential in English & Arts</h1>
-                <p class="animate-on-scroll fade-in-up delay-1">Join KITA Edu Center in Ho Chi Minh City for expert guidance in language and performance.</p>
-                <a href="courses.html" class="btn btn-primary animate-on-scroll fade-in-up delay-2">Explore Our Courses</a>
+                <h1 class="animate-on-scroll fade-in-up" data-i18n-key="heroTitle">Unlock Your Potential in English & Arts</h1>
+                <p class="animate-on-scroll fade-in-up delay-1" data-i18n-key="heroSubtitle">Join KITA Edu Center in Ho Chi Minh City for expert guidance in language and performance.</p>
+                <a href="courses.html" class="btn btn-primary animate-on-scroll fade-in-up delay-2" data-i18n-key="heroButton">Explore Our Courses</a>
             </div>
         </section>
 
         <section id="introduction" class="container content-section animate-on-scroll fade-in">
             <div class="section-header">
-                <h2>Welcome to KITA Edu Center</h2>
-                <p class="subtitle">Your journey towards excellence starts here.</p>
+                <h2 data-i18n-key="welcomeTitle">Welcome to KITA Edu Center</h2>
+                <p class="subtitle" data-i18n-key="welcomeSubtitle">Your journey towards excellence starts here.</p>
             </div>
             <div class="intro-content">
-                <img src="https://placehold.co/600x400/eeeeee/777777?text=Center+Image" alt="KITA Edu Center Facility" class="intro-image animate-on-scroll fade-in-left">
+                <img src="https://placehold.co/600x400/eeeeee/777777?text=Center+Image" alt="KITA Edu Center Facility" class="intro-image animate-on-scroll fade-in-left" data-i18n-key="centerImageAlt" data-i18n-target="alt">
                 <div class="intro-text animate-on-scroll fade-in-right">
-                    <p>Located conveniently in Ho Chi Minh City, KITA Edu Center is dedicated to providing top-tier education in English language skills and a diverse range of performing arts. We believe in nurturing talent within a supportive and inspiring environment.</p>
-                    <p>Our modern facilities, experienced instructors, and internationally recognized programs (like ABRSM) ensure our students receive the best possible preparation for their future success.</p>
-                    <a href="about.html" class="btn">Learn More About Us</a>
+                    <p data-i18n-key="welcomePara1">Located conveniently in Ho Chi Minh City, KITA Edu Center is dedicated to providing top-tier education in English language skills and a diverse range of performing arts. We believe in nurturing talent within a supportive and inspiring environment.</p>
+                    <p data-i18n-key="welcomePara2">Our modern facilities, experienced instructors, and internationally recognized programs (like ABRSM) ensure our students receive the best possible preparation for their future success.</p>
+                    <a href="about.html" class="btn" data-i18n-key="learnMoreButton">Learn More About Us</a>
                 </div>
             </div>
         </section>
@@ -63,46 +79,46 @@
         <section id="featured-courses" class="content-section bg-light animate-on-scroll fade-in">
             <div class="container">
                 <div class="section-header">
-                    <h2>Popular Programs</h2>
-                    <p class="subtitle">Discover courses designed for success.</p>
+                    <h2 data-i18n-key="popularProgramsTitle">Popular Programs</h2>
+                    <p class="subtitle" data-i18n-key="popularProgramsSubtitle">Discover courses designed for success.</p>
                 </div>
                 <div class="card-grid">
                     <div class="card animate-on-scroll fade-in-up">
-                        <img src="https://placehold.co/400x250/0056b3/ffffff?text=English+Course" alt="English Course" class="card-img">
+                        <img src="https://placehold.co/400x250/0056b3/ffffff?text=English+Course" alt="English Course" class="card-img" data-i18n-key="englishCourseAlt" data-i18n-target="alt">
                         <div class="card-body">
-                            <h3>Communicative English</h3>
-                            <p>Enhance your fluency and confidence for everyday communication and professional settings.</p>
-                            <a href="courses.html#english" class="card-link">Details &rarr;</a>
+                            <h3 data-i18n-key="commEnglishTitle">Communicative English</h3>
+                            <p data-i18n-key="commEnglishDesc">Enhance your fluency and confidence for everyday communication and professional settings.</p>
+                            <a href="courses.html#english" class="card-link" data-i18n-key="detailsLink">Details &rarr;</a>
                         </div>
                     </div>
                     <div class="card animate-on-scroll fade-in-up delay-1">
-                         <img src="https://placehold.co/400x250/d9534f/ffffff?text=ABRSM+Prep" alt="ABRSM Preparation" class="card-img">
+                         <img src="https://placehold.co/400x250/d9534f/ffffff?text=ABRSM+Prep" alt="ABRSM Preparation" class="card-img" data-i18n-key="abrsmAlt" data-i18n-target="alt">
                         <div class="card-body">
-                            <h3>ABRSM Exam Prep</h3>
-                            <p>Comprehensive preparation for ABRSM practical and theory music examinations.</p>
-                            <a href="courses.html#arts" class="card-link">Details &rarr;</a>
+                            <h3 data-i18n-key="abrsmTitle">ABRSM Exam Prep</h3>
+                            <p data-i18n-key="abrsmDesc">Comprehensive preparation for ABRSM practical and theory music examinations.</p>
+                            <a href="courses.html#arts" class="card-link" data-i18n-key="detailsLink">Details &rarr;</a>
                         </div>
                     </div>
                     <div class="card animate-on-scroll fade-in-up delay-2">
-                         <img src="https://placehold.co/400x250/5cb85c/ffffff?text=Public+Speaking" alt="Public Speaking Course" class="card-img">
+                         <img src="https://placehold.co/400x250/5cb85c/ffffff?text=Public+Speaking" alt="Public Speaking Course" class="card-img" data-i18n-key="publicSpeakingAlt" data-i18n-target="alt">
                         <div class="card-body">
-                            <h3>Public Speaking & Drama</h3>
-                            <p>Build confidence and stage presence through engaging drama and public speaking classes.</p>
-                            <a href="courses.html#arts" class="card-link">Details &rarr;</a>
+                            <h3 data-i18n-key="publicSpeakingTitle">Public Speaking & Drama</h3>
+                            <p data-i18n-key="publicSpeakingDesc">Build confidence and stage presence through engaging drama and public speaking classes.</p>
+                            <a href="courses.html#arts" class="card-link" data-i18n-key="detailsLink">Details &rarr;</a>
                         </div>
                     </div>
                 </div>
                  <div style="text-align: center; margin-top: 30px;">
-                     <a href="courses.html" class="btn">View All Courses</a>
+                     <a href="courses.html" class="btn" data-i18n-key="viewAllCoursesButton">View All Courses</a>
                  </div>
             </div>
         </section>
 
         <section class="cta-section animate-on-scroll fade-in">
             <div class="container">
-                <h2>Ready to Start Learning?</h2>
-                <p>Contact us today for a consultation or visit our center in HCMC.</p>
-                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                <h2 data-i18n-key="ctaTitle">Ready to Start Learning?</h2>
+                <p data-i18n-key="ctaSubtitle">Contact us today for a consultation or visit our center in HCMC.</p>
+                <a href="contact.html" class="btn btn-primary" data-i18n-key="ctaButton">Get In Touch</a>
             </div>
         </section>
 
@@ -111,27 +127,27 @@
     <footer class="site-footer">
         <div class="container footer-content">
             <div class="footer-about">
-                <h4>KITA Edu Center</h4>
-                <p>Nurturing potential in English and Arts in Ho Chi Minh City since [Year Founded].</p>
+                <h4 data-i18n-key="footerKitaEdu">KITA Edu Center</h4>
+                <p data-i18n-key="footerAboutText">Nurturing potential in English and Arts in Ho Chi Minh City since [Year Founded].</p>
                 </div>
             <div class="footer-links">
-                <h4>Quick Links</h4>
+                <h4 data-i18n-key="footerQuickLinks">Quick Links</h4>
                 <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Privacy Policy</a></li> </ul>
+                    <li><a href="about.html" data-i18n-key="navAbout">About Us</a></li>
+                    <li><a href="courses.html" data-i18n-key="navCourses">Courses</a></li>
+                    <li><a href="events.html" data-i18n-key="navEvents">Events</a></li>
+                    <li><a href="blog.html" data-i18n-key="navBlog">Blog</a></li>
+                    <li><a href="contact.html" data-i18n-key="navContact">Contact</a></li>
+                    <li><a href="#" data-i18n-key="navPrivacy">Privacy Policy</a></li> </ul>
             </div>
             <div class="footer-contact">
-                <h4>Contact Info</h4>
-                <p>123 Example Street, District 1<br>Ho Chi Minh City, Vietnam</p>
-                <p>Phone: +84 123 456 789</p>
-                <p>Email: info@kitaseducenter.example</p> </div>
+                <h4 data-i18n-key="footerContactInfo">Contact Info</h4>
+                <p data-i18n-key="footerAddress">123 Example Street, District 1<br>Ho Chi Minh City, Vietnam</p>
+                <p><span data-i18n-key="footerPhoneLabel">Phone:</span> <a href="tel:+84123456789">+84 123 456 789</a></p>
+                <p><span data-i18n-key="footerEmailLabel">Email:</span> <a href="mailto:info@kitaseducenter.example">info@kitaseducenter.example</a></p> </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; <span id="current-year"></span> KITA Edu Center. All Rights Reserved.</p>
+            <p data-i18n-key="footerCopyright">&copy; <span id="current-year"></span> KITA Edu Center. All Rights Reserved.</p>
         </div>
     </footer>
 

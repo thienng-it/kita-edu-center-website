@@ -2,8 +2,8 @@
 <html lang="en"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n-key="eventsPageTitle">Events & Workshops - KITA Edu Center</title>
-    <meta name="description" data-i18n-key="eventsMetaDescription" data-i18n-target="content" content="Stay updated on upcoming events, workshops, performances, and open days at KITA Edu Center in HCMC.">
+    <title data-i18n-key="feedbackPageTitle">Feedback - KITA Edu Center</title>
+    <meta name="description" data-i18n-key="feedbackMetaDescription" data-i18n-target="content" content="Share your feedback with KITA Edu Center. We value your opinions to help us improve.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 
     <header class="site-header">
         <nav class="navbar container">
-             <a href="index.html" class="logo">
+            <a href="index.html" class="logo">
                  <img src="https://placehold.co/150x50/0056b3/FFFFFF?text=KITA+Edu" alt="KITA Edu Center Logo" style="height: 40px; width: auto;">
             </a>
             <button class="menu-toggle" id="mobile-menu" aria-label="Open Menu" aria-expanded="false">
@@ -29,7 +29,7 @@
                 <li><a href="blog.html" class="nav-link" data-i18n-key="navBlog">Blog</a></li>
                 <li><a href="staff.html" class="nav-link" data-i18n-key="navStaff">Staff</a></li>
                 <li><a href="contact.html" class="nav-link" data-i18n-key="navContact">Contact</a></li>
-                <li><a href="feedback.html" class="nav-link" data-i18n-key="navFeedback">Feedback</a></li>
+                <li><a href="feedback.html" class="nav-link" data-i18n-key="navFeedback">Feedback</a></li> 
             </ul>
 
             <div class="search-container" id="search-container">
@@ -53,75 +53,52 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1 data-i18n-key="eventsHeroTitle">Upcoming Events</h1>
-                <p data-i18n-key="eventsHeroSubtitle">Join our workshops, performances, and community gatherings.</p>
+                <h1 data-i18n-key="feedbackHeroTitle">Share Your Feedback</h1>
+                <p data-i18n-key="feedbackHeroSubtitle">Your opinions help us grow and improve.</p>
             </div>
         </section>
 
         <section class="container content-section animate-on-scroll fade-in">
-            <div class="section-header">
-                <h2 data-i18n-key="eventsSectionTitle">What's Happening at KITA Edu</h2>
-                <p class="subtitle" data-i18n-key="eventsSectionSubtitle">Mark your calendars!</p>
-            </div>
+            <div class="contact-form-container" style="max-width: 700px; margin: 0 auto;"> 
+                <h2 data-i18n-key="feedbackFormTitle" style="text-align: center; margin-bottom: 30px;">We Value Your Input</h2>
+                <form id="feedback-form" action="YOUR_FEEDBACK_ENDPOINT" method="POST"> 
+                     <div class="form-group">
+                        <label for="name" data-i18n-key="feedbackFormNameLabel">Full Name (Optional)</label>
+                        <input type="text" id="name" name="name" data-i18n-key="feedbackFormNamePlaceholder" data-i18n-target="placeholder" placeholder="Your Full Name">
+                    </div>
+                     <div class="form-group">
+                        <label for="email" data-i18n-key="feedbackFormEmailLabel">Email Address (Optional)</label>
+                        <input type="email" id="email" name="email" data-i18n-key="feedbackFormEmailPlaceholder" data-i18n-target="placeholder" placeholder="your.email@example.com">
+                    </div>
 
-            <div class="event-list">
-                <div class="event-item animate-on-scroll fade-in-up">
-                    <div class="event-date">
-                        <span class="month">JUN</span>
-                        <span class="day">15</span>
-                        <span class="year">2025</span>
-                    </div>
-                    <div class="event-details">
-                        <img src="https://placehold.co/400x250/5cb85c/ffffff?text=Student+Performance" alt="Student Performance Night" class="event-image" data-i18n-key="event1ImageAlt" data-i18n-target="alt">
-                        <h3 data-i18n-key="event1Title">Student Performance Night</h3>
-                        <p class="event-meta">
-                            <span class="time" data-i18n-key="event1Time">6:00 PM - 8:00 PM</span> |
-                            <span class="location" data-i18n-key="event1Location">KITA Edu Center Hall</span>
-                        </p>
-                        <p data-i18n-key="event1Description">Come and support our talented music and drama students as they showcase their progress. Free admission, open to family and friends.</p>
-                        <a href="contact.html?event=Performance+Night" class="btn btn-secondary" data-i18n-key="event1Button">RSVP / Inquire</a>
-                    </div>
-                </div>
-
-                <div class="event-item animate-on-scroll fade-in-up">
-                    <div class="event-date">
-                        <span class="month">JUL</span>
-                        <span class="day">10</span>
-                         <span class="year">2025</span>
-                    </div>
-                    <div class="event-details">
-                         <img src="https://placehold.co/400x250/f0ad4e/ffffff?text=IELTS+Workshop" alt="IELTS Workshop" class="event-image" data-i18n-key="event2ImageAlt" data-i18n-target="alt">
-                        <h3 data-i18n-key="event2Title">Free IELTS Writing Workshop</h3>
-                         <p class="event-meta">
-                            <span class="time" data-i18n-key="event2Time">2:00 PM - 4:00 PM</span> |
-                            <span class="location" data-i18n-key="event2Location">KITA Edu Center - Room 3</span>
-                        </p>
-                        <p data-i18n-key="event2Description">Learn key strategies and tips for tackling IELTS Writing Task 1 and Task 2. Limited spots available.</p>
-                         <a href="contact.html?event=IELTS+Workshop" class="btn btn-secondary" data-i18n-key="event2Button">Register Now</a>
-                    </div>
-                </div>
-
-                 <div class="event-item past-event animate-on-scroll fade-in-up">
-                    <div class="event-date">
-                        <span class="month">APR</span>
-                        <span class="day">20</span>
-                         <span class="year">2025</span>
-                    </div>
-                    <div class="event-details">
-                         <img src="https://placehold.co/400x250/cccccc/555555?text=Open+Day+(Past)" alt="Open Day" class="event-image" data-i18n-key="eventPastImageAlt" data-i18n-target="alt">
-                        <h3 data-i18n-key="eventPastTitle">KITA Edu Center Open Day (Past Event)</h3>
-                         <p class="event-meta">
-                            <span class="time" data-i18n-key="eventPastTime">10:00 AM - 3:00 PM</span> |
-                            <span class="location" data-i18n-key="eventPastLocation">KITA Edu Center</span>
-                        </p>
-                        <p data-i18n-key="eventPastDescription">Thank you to everyone who joined our open day! We enjoyed meeting prospective students and parents.</p>
+                    <div class="form-group">
+                        <label data-i18n-key="feedbackOverallExperienceLabel">Overall Experience</label>
+                        <div style="display: flex; gap: 15px; margin-top: 5px;">
+                            <button type="button" class="btn btn-secondary" data-i18n-key="feedbackPositiveButton">Positive</button>
+                            <button type="button" class="btn btn-secondary" data-i18n-key="feedbackImprovementButton">Needs Improvement</button>
                         </div>
-                </div>
+                    </div>
 
+                     <div class="form-group">
+                        <label for="feedback-type" data-i18n-key="feedbackTypeLabel">Type of Feedback</label>
+                        <select id="feedback-type" name="feedback_type" class="form-control" style="width: 100%; padding: 12px 15px; border: 1px solid var(--current-border-color); border-radius: var(--border-radius); font-size: 1rem; font-family: var(--body-font); background-color: var(--current-white-bg-color); color: var(--current-dark-text-color);">
+                            <option value="general" data-i18n-key="feedbackTypeOptionGeneral">General Comment</option>
+                            <option value="suggestion" data-i18n-key="feedbackTypeOptionSuggestion">Suggestion for Improvement</option>
+                            <option value="compliment" data-i18n-key="feedbackTypeOptionCompliment">Compliment for Staff/Course</option>
+                            <option value="issue" data-i18n-key="feedbackTypeOptionIssue">Issue or Problem Report</option>
+                            <option value="question" data-i18n-key="feedbackTypeOptionQuestion">Question</option>
+                        </select>
+                    </div>
+
+                     <div class="form-group">
+                        <label for="message" data-i18n-key="feedbackYourFeedbackLabel">Your Feedback</label> <span class="required">*</span>
+                        <textarea id="message" name="message" rows="6" required data-i18n-key="feedbackFormMessagePlaceholder" data-i18n-target="placeholder" placeholder="Please share your thoughts with us..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-i18n-key="feedbackSubmitButton">Submit Feedback</button>
+                    <p id="form-status" class="form-status"></p> 
+                </form>
             </div>
-             <p style="text-align: center; margin-top: 40px;" data-i18n-key="eventsCheckBackMsg">Check back regularly for new events or follow us on [Social Media Link]!</p>
         </section>
-
     </main>
 
     <footer class="site-footer">
@@ -138,7 +115,7 @@
                     <li><a href="events.html" data-i18n-key="navEvents">Events</a></li>
                     <li><a href="blog.html" data-i18n-key="navBlog">Blog</a></li>
                     <li><a href="contact.html" data-i18n-key="navContact">Contact</a></li>
-                    <li><a href="feedback.html" data-i18n-key="navFeedback">Feedback</a></li>
+                    <li><a href="feedback.html" data-i18n-key="navFeedback">Feedback</a></li> 
                     <li><a href="#" data-i18n-key="navPrivacy">Privacy Policy</a></li>
                 </ul>
             </div>

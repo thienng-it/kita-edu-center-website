@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team - KITA Edu Center</title>
-    <meta name="description" content="Meet the experienced and dedicated teaching staff at KITA Edu Center in Ho Chi Minh City.">
+    <title data-i18n-key="staffPageTitle">Our Team - KITA Edu Center</title>
+    <meta name="description" data-i18n-key="staffMetaDescription" data-i18n-target="content" content="Meet the experienced and dedicated teaching staff at KITA Edu Center in Ho Chi Minh City.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,81 +21,96 @@
                 <span class="bar"></span><span class="bar"></span><span class="bar"></span>
             </button>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="courses.html" class="nav-link">Courses</a></li>
-                <li><a href="fees.html" class="nav-link">Fees</a></li>
-                <li><a href="events.html" class="nav-link">Events</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="staff.html" class="nav-link">Staff</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link" data-i18n-key="navHome">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n-key="navAbout">About</a></li>
+                <li><a href="courses.html" class="nav-link" data-i18n-key="navCourses">Courses</a></li>
+                <li><a href="fees.html" class="nav-link" data-i18n-key="navFees">Fees</a></li>
+                <li><a href="events.html" class="nav-link" data-i18n-key="navEvents">Events</a></li>
+                <li><a href="blog.html" class="nav-link" data-i18n-key="navBlog">Blog</a></li>
+                <li><a href="staff.html" class="nav-link" data-i18n-key="navStaff">Staff</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n-key="navContact">Contact</a></li>
             </ul>
+
+            <div class="search-container" id="search-container">
+                <input type="search" id="search-input" class="search-input" data-i18n-key="searchPlaceholder" data-i18n-target="placeholder" placeholder="Search site...">
+                <div id="search-results-dropdown" class="search-results-dropdown" style="display: none;">
+                    </div>
+            </div>
+
+            <button id="theme-toggle-button" class="theme-toggle-button" aria-label="Toggle theme">
+                <span class="theme-icon-sun">☀️</span>
+                <span class="theme-icon-moon" style="display:none;">🌙</span>
+            </button>
+
+            <div class="language-switcher" style="margin-left: 10px;">
+                <button id="lang-en-button" class="lang-button" data-lang="en" title="Switch to English">EN</button>
+                <button id="lang-vi-button" class="lang-button" data-lang="vi" title="Switch to Vietnamese">VN</button>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>Meet Our Team</h1>
-                <p>Passionate educators dedicated to your success.</p>
+                <h1 data-i18n-key="staffHeroTitle">Meet Our Team</h1>
+                <p data-i18n-key="staffHeroSubtitle">Passionate educators dedicated to your success.</p>
             </div>
         </section>
 
         <section class="container content-section animate-on-scroll fade-in">
             <div class="section-header">
-                <h2>Teaching Staff</h2>
-                <p class="subtitle">Experienced professionals in English and Arts.</p>
+                <h2 data-i18n-key="teachingStaffSectionTitle">Teaching Staff</h2>
+                <p class="subtitle" data-i18n-key="teachingStaffSectionSubtitle">Experienced professionals in English and Arts.</p>
             </div>
 
             <div class="staff-grid">
                 <div class="staff-card animate-on-scroll fade-in-up">
-                    <img src="https://placehold.co/200x200/cccccc/555555?text=Teacher+1" alt="[Teacher Name]" class="staff-photo">
-                    <h3>[Teacher Name 1]</h3>
-                    <p class="staff-title">Senior English Instructor (IELTS Specialist)</p>
-                    <p class="staff-bio">MA TESOL, Cambridge CELTA certified. Over 10 years of experience helping students achieve high IELTS scores and improve academic English.</p>
-                    </div>
+                    <img src="https://placehold.co/200x200/cccccc/555555?text=Teacher+1" class="staff-photo" data-i18n-key="staff1ImageAlt" data-i18n-target="alt" alt="[Teacher Name]">
+                    <h3 data-i18n-key="staff1Name">[Teacher Name 1]</h3>
+                    <p class="staff-title" data-i18n-key="staff1Title">Senior English Instructor (IELTS Specialist)</p>
+                    <p class="staff-bio" data-i18n-key="staff1Bio">MA TESOL, Cambridge CELTA certified. Over 10 years of experience helping students achieve high IELTS scores and improve academic English.</p>
+                </div>
 
                 <div class="staff-card animate-on-scroll fade-in-up delay-1">
-                     <img src="https://placehold.co/200x200/cccccc/555555?text=Teacher+2" alt="[Teacher Name]" class="staff-photo">
-                    <h3>[Teacher Name 2]</h3>
-                    <p class="staff-title">Head of Performing Arts (Piano & Theory)</p>
-                    <p class="staff-bio">MMus Performance, ABRSM Examiner (DipABRSM). Specializes in advanced piano technique and comprehensive music theory instruction.</p>
+                     <img src="https://placehold.co/200x200/cccccc/555555?text=Teacher+2" class="staff-photo" data-i18n-key="staff2ImageAlt" data-i18n-target="alt" alt="[Teacher Name]">
+                    <h3 data-i18n-key="staff2Name">[Teacher Name 2]</h3>
+                    <p class="staff-title" data-i18n-key="staff2Title">Head of Performing Arts (Piano & Theory)</p>
+                    <p class="staff-bio" data-i18n-key="staff2Bio">MMus Performance, ABRSM Examiner (DipABRSM). Specializes in advanced piano technique and comprehensive music theory instruction.</p>
                 </div>
 
                  <div class="staff-card animate-on-scroll fade-in-up delay-2">
-                     <img src="https://placehold.co/200x200/cccccc/555555?text=Teacher+3" alt="[Teacher Name]" class="staff-photo">
-                    <h3>[Teacher Name 3]</h3>
-                    <p class="staff-title">Drama & Communications Coach</p>
-                    <p class="staff-bio">BA Drama & Theatre Arts. Passionate about using drama to build confidence, creativity, and effective communication skills in students of all ages.</p>
+                     <img src="https://placehold.co/200x200/cccccc/555555?text=Teacher+3" class="staff-photo" data-i18n-key="staff3ImageAlt" data-i18n-target="alt" alt="[Teacher Name]">
+                    <h3 data-i18n-key="staff3Name">[Teacher Name 3]</h3>
+                    <p class="staff-title" data-i18n-key="staff3Title">Drama & Communications Coach</p>
+                    <p class="staff-bio" data-i18n-key="staff3Bio">BA Drama & Theatre Arts. Passionate about using drama to build confidence, creativity, and effective communication skills in students of all ages.</p>
                 </div>
 
                  <div class="staff-card animate-on-scroll fade-in-up delay-3">
-                     <img src="https://placehold.co/200x200/cccccc/555555?text=Teacher+4" alt="[Teacher Name]" class="staff-photo">
-                    <h3>[Teacher Name 4]</h3>
-                    <p class="staff-title">General English Instructor</p>
-                    <p class="staff-bio">BA English Language Teaching. Experienced in teaching communicative English to young learners and adults, focusing on practical application.</p>
+                     <img src="https://placehold.co/200x200/cccccc/555555?text=Teacher+4" class="staff-photo" data-i18n-key="staff4ImageAlt" data-i18n-target="alt" alt="[Teacher Name]">
+                    <h3 data-i18n-key="staff4Name">[Teacher Name 4]</h3>
+                    <p class="staff-title" data-i18n-key="staff4Title">General English Instructor</p>
+                    <p class="staff-bio" data-i18n-key="staff4Bio">BA English Language Teaching. Experienced in teaching communicative English to young learners and adults, focusing on practical application.</p>
                 </div>
-
-                </div>
+            </div>
         </section>
 
          <section class="container content-section bg-light animate-on-scroll fade-in">
               <div class="section-header">
-                <h2>Support Staff</h2>
-                <p class="subtitle">Helping make your experience smooth.</p>
+                <h2 data-i18n-key="supportStaffSectionTitle">Support Staff</h2>
+                <p class="subtitle" data-i18n-key="supportStaffSectionSubtitle">Helping make your experience smooth.</p>
             </div>
              <div class="staff-grid">
                  <div class="staff-card animate-on-scroll fade-in-up">
-                    <img src="https://placehold.co/200x200/cccccc/555555?text=Admin+1" alt="[Staff Name]" class="staff-photo">
-                    <h3>[Admin Staff Name 1]</h3>
-                    <p class="staff-title">Center Manager</p>
-                    <p class="staff-bio">Oversees daily operations and student services. Contact for administrative inquiries.</p>
+                    <img src="https://placehold.co/200x200/cccccc/555555?text=Admin+1" class="staff-photo" data-i18n-key="adminStaff1ImageAlt" data-i18n-target="alt" alt="[Staff Name]">
+                    <h3 data-i18n-key="adminStaff1Name">[Admin Staff Name 1]</h3>
+                    <p class="staff-title" data-i18n-key="adminStaff1Title">Center Manager</p>
+                    <p class="staff-bio" data-i18n-key="adminStaff1Bio">Oversees daily operations and student services. Contact for administrative inquiries.</p>
                 </div>
                  <div class="staff-card animate-on-scroll fade-in-up delay-1">
-                    <img src="https://placehold.co/200x200/cccccc/555555?text=Admin+2" alt="[Staff Name]" class="staff-photo">
-                    <h3>[Admin Staff Name 2]</h3>
-                    <p class="staff-title">Admissions Coordinator</p>
-                    <p class="staff-bio">Assists with course registration, fees, and scheduling inquiries.</p>
+                    <img src="https://placehold.co/200x200/cccccc/555555?text=Admin+2" class="staff-photo" data-i18n-key="adminStaff2ImageAlt" data-i18n-target="alt" alt="[Staff Name]">
+                    <h3 data-i18n-key="adminStaff2Name">[Admin Staff Name 2]</h3>
+                    <p class="staff-title" data-i18n-key="adminStaff2Title">Admissions Coordinator</p>
+                    <p class="staff-bio" data-i18n-key="adminStaff2Bio">Assists with course registration, fees, and scheduling inquiries.</p>
                 </div>
              </div>
          </section>
@@ -104,8 +118,32 @@
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-content"> ... </div>
-         <div class="footer-bottom"> ... </div>
+        <div class="container footer-content">
+             <div class="footer-about">
+                <h4 data-i18n-key="footerKitaEdu">KITA Edu Center</h4>
+                <p data-i18n-key="footerAboutText">Nurturing potential in English and Arts in Ho Chi Minh City since [Year Founded].</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n-key="footerQuickLinks">Quick Links</h4>
+                <ul>
+                    <li><a href="about.html" data-i18n-key="navAbout">About Us</a></li>
+                    <li><a href="courses.html" data-i18n-key="navCourses">Courses</a></li>
+                    <li><a href="events.html" data-i18n-key="navEvents">Events</a></li>
+                    <li><a href="blog.html" data-i18n-key="navBlog">Blog</a></li>
+                    <li><a href="contact.html" data-i18n-key="navContact">Contact</a></li>
+                    <li><a href="#" data-i18n-key="navPrivacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4 data-i18n-key="footerContactInfo">Contact Info</h4>
+                <p data-i18n-key="footerAddress">123 Example Street, District 1<br>Ho Chi Minh City, Vietnam</p>
+                <p><span data-i18n-key="footerPhoneLabel">Phone:</span> <a href="tel:+84123456789">+84 123 456 789</a></p>
+                <p><span data-i18n-key="footerEmailLabel">Email:</span> <a href="mailto:info@kitaseducenter.example">info@kitaseducenter.example</a></p>
+            </div>
+        </div>
+         <div class="footer-bottom">
+            <p data-i18n-key="footerCopyright">&copy; <span id="current-year"></span> KITA Edu Center. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
